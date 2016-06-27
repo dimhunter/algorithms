@@ -12,17 +12,24 @@ import com.shen.SortBase;
  */
 public class Selection extends SortBase {
 
+    /**
+     * 将arr升序排列
+     * @param arr
+     */
     @Override
     public void sort(Comparable[] arr) {
         int N = arr.length;
-        //将arr升序排列
+        //1. 从第0位开始，至最后一位，和剩余元素的最小值两两互换位置。
         for(int i=0; i<N; i++){
+            //剩余元素的最小值的索引
             int min = i;
+            //2. 通过less比较，找出剩余元素最小值的索引位置。
             for(int j=i+1; j<N; j++){
                 if(less(arr[j],arr[min])){
                     min = j;
                 }
             }
+            //3. 将剩余元素的最小值，与第0至length-1位元素互换位置。
             exch(arr,i,min);
         }
     }
