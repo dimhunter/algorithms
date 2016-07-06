@@ -12,14 +12,14 @@ public abstract class SortBase {
     public abstract void sort(Comparable[] arr);
 
     /**
-     * 比较大小(辅助函数)
+     * 比较大小(辅助函数)，a是否小于b
      *      对于compareTo方法
      *          返回正整数1，前者>后者
      *          返回0，前者=后者
      *          返回-1，前者<后者
      * @param a
      * @param b
-     * @return
+     * @return true ：a<b ，反之false
      */
     public boolean less(Comparable a, Comparable b){
         return a.compareTo(b) < 0;
@@ -32,6 +32,8 @@ public abstract class SortBase {
      * @param j
      */
     public void exch(Comparable[] arr, int i, int j){
+        //输出一些东西，可以比较不同算法执行元素交换位置的次数。次数越少，排序越快。
+        System.out.println("-----");
         Comparable t = arr[i];
         arr[i] = arr[j];
         arr[j] = t;

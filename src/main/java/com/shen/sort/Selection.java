@@ -19,13 +19,13 @@ public class Selection extends SortBase {
      */
     @Override
     public void sort(Comparable[] arr) {
-        int N = arr.length;
+        int length = arr.length;
         //1. 从第0位开始，至最后一位，和剩余元素的最小值两两互换位置。
-        for(int i=0; i<N; i++){
+        for(int i=0; i<length; i++){
             //剩余元素的最小值的索引
             int min = i;
             //2. 通过less比较，找出剩余元素最小值的索引位置。
-            for(int j=i+1; j<N; j++){
+            for(int j=i+1; j<length; j++){
                 if(less(arr[j],arr[min])){
                     min = j;
                 }
