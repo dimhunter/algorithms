@@ -22,6 +22,7 @@ public abstract class SortBase {
      * @return true ：a<b ，反之false
      */
     public boolean less(Comparable a, Comparable b){
+        System.out.println("-less");
         return a.compareTo(b) < 0;
     }
 
