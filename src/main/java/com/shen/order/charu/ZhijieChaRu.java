@@ -12,7 +12,7 @@ public class ZhijieChaRu {
 	
 	public static void main(String[] args) {
 		int[] a = { 49, -38, 65, 22, 76, -13, 27, 49, 78, 0, 34, 12, 64, 1 };
-		System.out.println("排序之前：");
+		System.out.println("begin-------------");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}
@@ -34,7 +34,7 @@ public class ZhijieChaRu {
 			a[j + 1] = temp;
 		}
 		System.out.println();
-		System.out.println("排序之后：");
+		System.out.println("after--------------");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}

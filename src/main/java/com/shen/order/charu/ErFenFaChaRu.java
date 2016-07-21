@@ -12,14 +12,12 @@ public class ErFenFaChaRu {
 	
 	public static void main(String[] args) {
 		int[] a = { 49, 38, -65, 97, 176, 213, 227, -49, 78, 34, 12, 0, 11, 18};
-		System.out.println("排序之前：");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}
 		// 二分插入排序
 		sort(a);
 		System.out.println();
-		System.out.println("排序之后：");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}

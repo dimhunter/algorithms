@@ -18,10 +18,10 @@ public class StackTest {
 		stack.push("4");
 		stack.push("5");
 		System.out.println("now the stack is " + isEmpty(stack));
-		System.out.println("栈顶元素="+stack.peek());
-		System.out.println("移除："+stack.pop());
-		System.out.println("移除："+stack.pop());
-		System.out.println("2在栈中位置="+stack.search("2"));
+		System.out.println("top element ="+stack.peek());
+		System.out.println("remove : "+stack.pop());
+		System.out.println("remove : "+stack.pop());
+		System.out.println("2 at the index of the stack ="+stack.search("2"));
 		logger.debug("------------");
 		StackTest.aaa();
 	}

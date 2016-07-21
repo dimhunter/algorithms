@@ -28,7 +28,11 @@ public class Shell extends SortBase {
     }
 
     public static void main(String[] args) {
-
+        Shell shell = new Shell();
+        String[] arr = new String[]{"d","b","c","a","x","z","y"};
+        shell.sort(arr);
+        assert shell.isSorted(arr);
+        shell.show(arr);
     }
 
 }
