@@ -34,7 +34,7 @@ public abstract class SortBase {
      */
     public void exch(Comparable[] arr, int i, int j){
         //输出一些东西，可以比较不同算法执行元素交换位置的次数。次数越少，排序越快。
-        System.out.println("-----");
+        System.out.println("==exch");
         Comparable t = arr[i];
         arr[i] = arr[j];
         arr[j] = t;
