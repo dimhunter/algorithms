@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.xiu</groupId>
-  <artifactId>dataStructure_algorithm</artifactId>
+  <artifactId>algorithms</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>dataStructure_algorithm</name>
+  <name>algorithms</name>
   <url>http://maven.apache.org</url>
 
   <properties>
