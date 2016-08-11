@@ -22,7 +22,7 @@ public abstract class SortBase {
      * @return true ：a<b ，反之false
      */
     public boolean less(Comparable a, Comparable b){
-        System.out.println("-less");
+//        System.out.println("-less");
         return a.compareTo(b) < 0;
     }
 
@@ -61,7 +61,6 @@ public abstract class SortBase {
     public void show(Comparable[] arr){
         for(int i=0; i<arr.length; i++ ){
             System.out.print(arr[i] + " ");
-            System.out.println();
         }
     }
 
