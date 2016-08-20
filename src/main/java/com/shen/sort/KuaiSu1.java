@@ -1,4 +1,4 @@
-package com.shen.order.jiaohuan;
+package com.shen.sort;
 
 /**
  * 快速排序（是不稳定的算法）

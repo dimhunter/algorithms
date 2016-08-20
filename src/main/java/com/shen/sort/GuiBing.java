@@ -1,4 +1,4 @@
-package com.shen.order.guibing;
+package com.shen.sort;
 
 /**
  * 归并排序
